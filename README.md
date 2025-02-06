@@ -38,6 +38,19 @@ root.render(
     </Provider>
   </React.StrictMode>
 )
+What are middleware in Redux?
+
+Middleware like Thunk and Saga handle side effects like API calls.
+What is Reselect in Redux?
+
+A library for memoizing selectors to optimize performance.
+
+How do you persist Redux state across page reloads?
+Using redux-persist to save state to local storage.
+
+When should you NOT use Redux?
+When the application state is simple and can be managed locally.
+
 ------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
