@@ -21,7 +21,7 @@ import { fetchUserData } from "../features/userSlice";
             user.map((user,index)=>{
                 <>
                 <h2>{user?.name}</h2>
-                <p>Email: {user?.email}</p>
+                <p>Emails of user : {user?.email}</p>
                 </>
 
             })
