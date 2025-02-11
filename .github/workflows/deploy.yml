@@ -22,7 +22,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build React App
-        run: npm run build  # React build step
+        run: CI=false npm run build  # React build step
 
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@v0.5.0

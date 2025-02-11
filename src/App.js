@@ -9,7 +9,7 @@ function App() {
   const [task, setTask] = useState("");
   const todos = useSelector((state) => state.todos.todos);
   const dispatch = useDispatch();
-  const { user, loading, error } = useSelector((state) => state.user);
+  const { user } = useSelector((state) => state.user);
   const handleAddTodo = () => {
     if (task.trim()) {
       dispatch(addTodo(task));
@@ -59,20 +59,3 @@ function App() {
 }
 
 export default App;
-
-
-const UserProfile = () => {
-  const dispatch = useDispatch();
-  const { user, loading, error } = useSelector((state) => state.user);
-
-  
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
-
-  return (
-    <div>
-      <h2>{user?.name}</h2>
-      <p>Email: {user?.email}</p>
-    </div>
-  );
-};
